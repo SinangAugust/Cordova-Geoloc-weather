@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <title>Geolocation and Weather Report</title>
+    </head>
+    <body>
+        <div class="app">
+            <section class="geoloc-report">
+                <div>
+                    <h1>Geolocation Report</h1>
+                    <button id="getPosition" class="button-content">Get Current Position</button>
+                    <!-- <button id="getMapLocation" onclick="getMapLocation()">Get Map Location</button> -->
+                </div>
+                <div id="getcontainer" class="container">
+                    <div><h3>Latitude: <b id="latitude"></b></h3></div>
+                    <div><h3>Longitude: <b id="longitude"></b></h3></div>
+                    <div><h3>Location: <b id="location"></b></h3></div>
+                </div><br>
+            </section>
+    
+            <section class="weather-report">
+                <div>
+                    <h1>Weather Report</h1>
+                    <button id="getWeather" onclick="getWeatherUpdate()">Get Weather Update</button>
+                    <div class="weather">
+                        <h3>City: <b id="description"></b></h3>
+                        <h3>Temperature (&degC): <b id="temp"></b></h3>
+                        <h3>Wind: <b id="wind"></b></h3>
+                        <h3>Humidity: <b id="humidity"></b></h3>
+                        <h3>Visibility: <b id="visibility"></b></h3>
+                        <h3>Sunrise: <b id="sunrise"></b></h3>
+                        <h3>Sunset: <b id="sunset"></b></h3>
+                    </div>
+                </div>
+            </section>
+        </div>        
+        <!-- <script src="cordova.js"></script> -->
+        <script src="js/index.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/geolocation.js"></script>
+        <!-- <script src="js/geomaplocation.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=380b0e5b293d08a28c9d2d98d4aa4f77"></script> -->
+    </body>
+</html>
